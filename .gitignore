@@ -1,0 +1,7 @@
+/bower_components
+log
+/node_modules
+/img
+package-lock.json
+*.pem
+deploy-ssh.txt

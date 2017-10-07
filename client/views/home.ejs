@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Circumference Counseling</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/css/materialize.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/flaticon.css"> 
+        <link href="/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="navbar-fixed">
+            <nav>
+                <div class="nav-wraper white">
+                    <a href="#" class="brand-logo center hide-on-large-only"><img src="/img/CC-logo1.png" alt="Circumference Counseling Logo"></a>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse blue-text"><i class="material-icons">menu</i></a>                        
+                    <ul id="nav" class="hide-on-med-and-down">
+                        <li><a href="#about" class="blue-text" onclick="scrollToElement('about'); return false;"><i class="material-icons left">spa</i>Kim Ramsey</a></li>
+                        <li><a href="#client_focus" class="blue-text"  onclick="scrollToElement('client_focus'); return false;"><i class="flaticon-picture left"></i>Client Focus</a></li>
+                        <li><a href="#treatment" class="blue-text" onclick="scrollToElement('treatment'); return false;"><i class="flaticon-puzzle-piece-silhouette left"></i>Teatment</a></li>
+                        <li><a href="#main"  onclick="scrollToElement('main'); return false;"><img src="/img/CC-logo1.png" alt="Circumference Counseling Logo"></a></li>
+                        <li><a href="#" class="blue-text"><i class="flaticon-comment-black-oval-bubble-shape left"></i>Blog</a></li>
+                        <li><a href="#contact" class="blue-text"  onclick="scrollToElement('contact'); return false;"><i class="flaticon-envelope left"></i>Contact</a></li>
+                        <li><a href="https://www.simplepractice.com/" class="blue-text" target="_blank"><i class="material-icons left">open_in_new</i>Login/Register</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="side-nav white">
+                        <li><a href="#main"  onclick="scrollToElement('main'); return false;"><img src="/img/CC-logo1.png" alt="Circumference Counseling Logo"></a></li>
+                        <li><a href="#about" class="blue-text" onclick="scrollToElement('about'); return false"><i class="material-icons blue-text left blue-text">spa</i>Kim Ramsey</a></li>
+                        <li><a href="#client_focus" class="blue-text"  onclick="scrollToElement('client_focus'); return false;"><i class="flaticon-picture left blue-text"></i>Client Focus</a></li>
+                        <li><a href="#treatment" class="blue-text" onclick="scrollToElement('treatment'); return false;"><i class="flaticon-puzzle-piece-silhouette left blue-text"></i>Teatment</a></li>
+                        <li><a href="#" class="blue-text"><i class="flaticon-comment-black-oval-bubble-shape left blue-text"></i>Blog</a></li>
+                        <li><a href="#contact" class="blue-text"  onclick="scrollToElement('contact'); return false;"><i class="flaticon-envelope left blue-text"></i>Contact</a></li>
+                        <li><a href="https://www.simplepractice.com/" class="blue-text" target="_blank"><i class="material-icons blue-text left">open_in_new</i>Login/Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="">
+            <section id="main" class="row container">
+                <!-- <img class="col s12 m6 l6" src="/img/CC-logo2.png" alt="Circumference Counseling Logo art"> -->
+                <h2 class="col m6 offset-m6">Welcome</h2>
+                <p class="col m6 offset-m6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit efficitur diam, eu congue tortor cursus eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce fringilla mauris at massa volutpat, gravida cursus quameuismod. Vivamus varius odio quis leo pulvinar, at porttitor nisl elementum. Duis pulvinar lorem nibh, vel faucibus enim aliquam et. Sed pharetra quam turpis, nec accumsan anteaccumsan quis. Donec ac sapien in purus sodales semper id eu ante. Nullam sit amet  turpis cursus, blandit dolor non, dapibus mauris.</p>
+                <a href="#about" class="blue-text arrow-btn-down" onclick="scrollToElement('about'); return false"><i class="touch-btn  flaticon-thin-arrowheads-pointing-down"></i></a>
+            </section>
+            <section id="about" class="row container">
+                <a href="#main" class="blue-text arrow-btn-up" onclick="scrollToElement('main'); return false"><i class="touch-btn flaticon-chevron-up"></i></a>
+                <h2 class="blue-text col s12"><i class="material-icons blue-text left blue-text">spa</i>Kim Ramsey, LCSW-C</h2>
+                <a href="#client_focus" class="blue-text arrow-btn-down" onclick="scrollToElement('client_focus'); return false"><i class="touch-btn  flaticon-thin-arrowheads-pointing-down"></i></a>
+            </section>
+            <section id="client_focus" class="yellow">
+                <a href="#about" class="blue-text arrow-btn-up" onclick="scrollToElement('about'); return false"><i class="touch-btn flaticon-chevron-up"></i></a>
+                <a href="#treatment" class="blue-text arrow-btn-down" onclick="scrollToElement('treatment'); return false"><i class="touch-btn  flaticon-thin-arrowheads-pointing-down"></i></a>
+            </section>
+            <section id="treatment" class="green">
+                <a href="#client_focus" class="blue-text arrow-btn-up" onclick="scrollToElement('client_focus'); return false"><i class="touch-btn flaticon-chevron-up"></i></a>
+                <a href="#contact" class="blue-text arrow-btn-down" onclick="scrollToElement('contact'); return false"><i class="touch-btn  flaticon-thin-arrowheads-pointing-down"></i></a>
+            </section>
+            <section id="contact" class="purple row container">
+                <a href="#treatment" class="blue-text arrow-btn-up" onclick="scrollToElement('treatment'); return false"><i class="touch-btn flaticon-chevron-up"></i></a>
+            </section>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/materialize.min.js"></script>        
+        <script type="text/javascript" src="/js/ScrollToAnchor.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".button-collapse").sideNav({'closeOnClick':true})
+            })
+        </script>
+    </body>
+</html>

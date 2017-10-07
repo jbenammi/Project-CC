@@ -1,0 +1,132 @@
+
+
+nav div > ul {
+    width: 65%;
+    margin: 0px auto;
+}
+
+nav > div,
+nav div > a,
+nav div a > img,
+#nav,
+#nav > li, 
+#nav li > a,
+#nav li a > img {
+    height: inherit;
+}
+
+nav div ul li > a {
+    height: inherit;
+}
+
+nav div ul li a > img {
+    height: inherit;
+}
+
+main section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav-mobile li, .nav-mobile li a {
+	cursor: pointer;
+	text-decoration: none;
+	transition: all .2s;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative;
+    opacity: initial;
+    pointer-events: initial;
+}
+
+.navbar-fixed {
+    z-index: 999;
+    position: fixed;
+}
+
+nav i.left {
+    margin-right: 10px;
+}
+
+main section {
+    position: relative;
+}
+
+main section::before {
+	content:"";
+	display:block;
+	height: 60px;
+	/* height: var(--header-height-mobile);  to be implemented in later version if approved for use in Edge */
+}
+
+#main {
+    background-image: url('../img/CC-logo2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left;
+}
+
+.arrow-btn-down,
+.arrow-btn-up {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.arrow-btn-down {
+    bottom: 10px;
+    position: absolute;  
+}
+
+.arrow-btn-up {
+    position: relative;
+}
+
+.material-icons {
+    font-size: inherit;
+}
+
+@media only screen and (min-width: 601px) {
+    main section:before {
+        height: 80px;
+    }
+
+    #main {
+        background-size: 50%;        
+        background-position: left;
+        background-position-y: 130px;
+    }
+}
+
+
+@media only screen and (min-width: 993px){
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1129px) {
+    nav div > ul {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1130px) and (max-width: 1289px) {
+    nav div > ul {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1290px) and (max-width: 1469px) {
+    nav div > ul {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1470px) and (max-width: 1650px) {
+    nav div > ul {
+        width: 70%;
+    }
+}
